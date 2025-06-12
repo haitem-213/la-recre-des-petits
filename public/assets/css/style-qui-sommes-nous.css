@@ -1,0 +1,95 @@
+/* -----------------------------------------------------
+      PAGE QUI SOMMES-NOUS ?
+      ----------------------------------------------------- */
+      .about-header {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--color-bg);
+        font-family: 'Fredoka One', sans-serif;
+        font-size: 1.5em;
+        color: var(--color-primary);
+      }
+      
+      /* Présentation de l'entreprise */
+      .about {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+      }
+      
+      .about-text {
+        flex: 1;
+        font-size: 1.2em;
+        color: var(--color-gray-dark);
+      }
+      
+      .about-image img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+      }
+      
+      /* Nos valeurs */
+      .values {
+        text-align: center;
+        padding: 40px;
+      }
+      
+      .value-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      
+      .value {
+        background-color: var(--color-gray);
+        padding: 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        width: 150px;
+      }
+      
+      .value:hover {
+        background-color: #ddd;
+      }
+      
+      /* Engagement */
+      .engagement {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--color-bg);
+      }
+      
+   
+       /* Bouton compte */
+     .btn-compte {
+       background-color: var(--color-primary);
+       color: var(--color-white);
+       border: none;
+       padding: 10px 20px;
+       border-radius: 5px;
+       cursor: pointer;
+       font-weight: bold;
+     }
+     
+     .btn-compte:hover {
+       background-color: #e64e00;
+     }
+     
+     /* CONTENU PRINCIPAL */
+     .hero {
+       text-align: center;
+       padding: 60px 20px;
+     }
+     
+     /* FOOTER */
+     footer {
+       text-align: center;
+       background-color: var(--color-secondary);
+       color: #fff;
+       padding: 15px;
+       margin-top: 40px;
+     }
+     
+    

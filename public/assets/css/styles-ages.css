@@ -1,0 +1,34 @@
+
+      
+    
+  /* -----------------------------------------------------
+      SECTIONS GROUPES D'ÂGE
+----------------------------------------------------- */
+.groupes-ages {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.groupe-age {
+  width: 100px; /* Taille des ronds */
+  height: 100px;
+  background-color: #ffcc00; /* Couleur du fond */
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Rend l'élément circulaire */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.groupe-age:hover {
+  transform: scale(1.1); /* Effet au survol */
+  background-color: #ffaa00; /* Changement de couleur */
+}

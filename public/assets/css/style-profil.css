@@ -1,0 +1,91 @@
+/* Variables de couleurs */
+:root {
+    --color-primary: #FF5500;       /* Orange */
+    --color-secondary: #41D3BD;     /* Turquoise */
+    --color-bg: #f8f8f8;
+    --color-white: #ffffff;
+    --color-black: #000000;
+  }
+  
+  /* Réinitialisation de base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+  
+  /* Section Profil */
+  .profil-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .profil-section h1 {
+    text-align: center;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+  }
+  
+  /* Formulaire de profil */
+  .profil-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color-black);
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Bouton de soumission */
+  .btn-submit {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #37b0a6;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #222;
+    color: var(--color-white);
+    padding: 15px;
+    margin-top: 40px;
+  }
+  

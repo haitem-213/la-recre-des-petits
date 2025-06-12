@@ -1,0 +1,52 @@
+La Récré des Petits (http://larecredespetits.fr)
+│
+├── Accueil (Home)
+│   └── URL : http://larecredespetits.fr
+│
+├── Catégories
+│   └── URL : http://larecredespetits.fr/categories
+│
+├── Âges
+│   └── URL : http://larecredespetits.fr/ages
+│
+├── Marques
+│   └── URL : http://larecredespetits.fr/marques
+│
+├── Qui sommes-nous ?
+│   └── URL : http://larecredespetits.fr/qui-sommes-nous
+│
+├── Espace Client (Mon compte)
+│   └── URL : http://larecredespetits.fr/mon-compte
+│
+└── Footer
+    ├── Mentions légales
+    │   └── URL : http://larecredespetits.fr/mentions-legales
+    │
+    ├── Contact (Nous contacter)
+    │   └── URL : http://larecredespetits.fr/nous-contacter
+    │
+    └── Presse
+        └── URL : http://larecredespetits.fr/presse
+
+
+$routes->get('/', 'Accueil::index');
+$routes->get('/accueil', 'Accueil::index');
+
+// Routes pour les produits
+$routes->get('/produits', 'Produits::index');
+$routes->get('/produits/(:num)', 'Produits::fiche/$1');
+$routes->get('/produits/categorie/(:num)', 'Produits::categorie/$1');
+$routes->get('/produits/age/(:any)', 'Produits::age/$1');
+
+// Route pour le panier
+$routes->get('/panier', 'Panier::index');
+
+// Route pour mon compte
+$routes->get('/mon-compte', 'Compte::index');
+
+// Autres pages
+$routes->get('/categories', 'Categories::index');
+$routes->get('/ages', 'Ages::index');
+$routes->get('/marques', 'Marques::index');
+$routes->get('/qui-sommes-nous', 'Presentation::index');
+

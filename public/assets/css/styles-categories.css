@@ -1,0 +1,25 @@
+   /* -----------------------------------------------------
+      PAGE CATEGORIES
+      ----------------------------------------------------- */
+      .categories {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .category {
+        background-color: var(--color-gray);
+        padding: 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .category:hover {
+        background-color: #ddd;
+      }
+      
+   

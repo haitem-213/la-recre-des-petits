@@ -1,0 +1,1 @@
+alert('Ayayye Koko Cambo Ayayye');

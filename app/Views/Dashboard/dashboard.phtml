@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../../public/assets/css/style.css">
+    
+    
+</head>
+<body>
+
+<?=$this->extend('layout-dashboard')?>
+
+    <div class="container">
+        <h1>Tableau de Bord</h1>
+
+        <!-- Inclusion de la vue des utilisateurs -->
+        <h2>Utilisateurs</h2>
+        <?php $this->load->view('clistTousUtilisateurs', [ "utilisateurs" => $utilisateurs]); ?>
+    
+
+ 
+        <!-- Inclusion de la vue des produits -->
+        <h2>Produits</h2>
+         <?php $this->load->view('afficherTousLesProduits', ["produits" => $produits]); ?> 
+
+        <h2>Ages</h2> 
+         <?php $this->load->view('afficherListAges', ["ages" => $ages]); ?> 
+
+    </div>
+ 
+</body>
+</html>
